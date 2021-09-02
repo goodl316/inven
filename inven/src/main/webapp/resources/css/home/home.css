@@ -1,0 +1,301 @@
+@charset 'utf-8';
+
+@import
+	url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap")
+	;
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+a {
+	color: #000;
+	text-decoration: none;
+}
+
+img {
+	border: 0;
+	vertical-align: none;
+}
+
+ul, li {
+	list-style: none;
+}
+
+html {
+	
+}
+
+body {
+	display: block;
+	font-family: "Noto Sans KR", sans-serif;
+	font-size: 13px;
+	font-weight: 400;
+	line-height: normal;
+	background: url("/res/img/main-ad/IU.jpg") 0 top no-repeat
+		rgb(255, 255, 255);
+	background-position-y: 101px !important;
+}
+
+/* 공통 요소 */
+.container {
+	position: relative;
+	width: 1060px;
+	height: 100%;
+	margin: 0 auto;
+	padding: 0 5px;
+}
+
+.clearfix::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+/* // 공통 요소 */
+.wrap {
+	position: relative;
+	display: block;
+}
+
+/* 상단 영역 */
+.header {
+	min-width: 1060px;
+}
+
+.top-header {
+	position: relative;
+	width: 100%;
+	height: 30px;
+	background: #fbfbfb;
+	text-align: center;
+	line-height: 30px;
+	border-bottom: 1px solid #e1e1e1;
+	z-index: 3;
+}
+
+.top-link {
+	display: inline-block;
+}
+
+.top-link>li {
+	position: relative;
+	display: block;
+	float: left;
+	padding: 0 10px;
+}
+
+.link {
+	color: #000;
+	font-size: 11px;
+	font-weight: 300;
+}
+
+.link::after {
+	content: "";
+	position: absolute;
+	top: 50%;
+	right: 0;
+	display: block;
+	width: 1px;
+	height: 10px;
+	margin-top: -5px;
+	border-left: 1px solid #ededed;
+	background: #bebebe;
+}
+
+.top-header-right {
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: 5px 30px 5px 0;
+}
+
+.top-header-right>div {
+	position: relative;
+	float: left;
+	height: 20px;
+	line-height: 20px;
+	margin-left: 5px;
+	z-index: 1;
+}
+
+.top-header-right>div>button {
+	padding: 0;
+	border: none;
+	cursor: pointer;
+}
+
+.userinfo {
+	font-size: 11px;
+	background: transparent;
+}
+
+.join-bt {
+	font-size: 11px;
+	background: transparent;
+}
+
+.login-bt {
+	position: relative;
+	width: 60px;
+	height: 20px;
+	font-size: 11px;
+	color: #fff;
+	text-align: center;
+	background: #ff7e00;
+}
+
+.quicklink-bt {
+	position: relative;
+	width: 60px;
+	height: 20px;
+	font-size: 11px;
+	color: #fff;
+	text-align: center;
+	background: #02aa35;
+}
+
+.main-header {
+	position: relative;
+	height: 60px;
+	background: #a40606;
+	border-bottom: 2px solid #7e0000;
+	z-index: 2;
+	overflow: hidden;
+}
+
+.main-header>.container::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 190px;
+	display: block;
+	height: 100%;
+	border-left: 600px solid #b41010;
+	transform: skewX(-43deg);
+}
+
+.logo {
+	position: relative;
+	float: left;
+	width: 118px;
+	height: 60px;
+	margin-right: 93px;
+}
+
+.logo>a {
+	display: block;
+	width: 100%;
+	height: 100%;
+	background: url("/res/img/logo.png") no-repeat center;
+}
+
+.gnb {
+	height: 100%;
+	float: left;
+}
+
+.depth1 {
+	display: flex;
+	justify-content: normal;
+	align-items: center;
+	flex-flow: row wrap;
+	height: 100%;
+	z-index: 10;
+}
+
+.depth1>li {
+	position: relative;
+	height: 100%;
+	line-height: 60px;
+}
+
+.main-menu {
+	display: block;
+	height: 100%;
+	font-size: 16px;
+	font-weight: 300;
+	color: #fff;
+	text-align: center;
+	padding: 0 23px;
+}
+
+.depth1>li:hover .main-menu {
+	color: #eecc00;
+}
+
+.user-link {
+	position: relative;
+	float: right;
+	height: 100%;
+	background: #b41010;
+	z-index: 1;
+}
+
+.user-link::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	right: -24px;
+	display: block;
+	height: 100%;
+	border-left: 300px solid #b41010;
+	transform: skewX(-43deg);
+	z-index: -1;
+}
+
+.user-link-list {
+	display: flex;
+	justify-content: space-between;
+	flex-flow: row wrap;
+	align-items: center;
+	height: 100%;
+	margin-right: -3px;
+}
+
+.user-link-list>li {
+	margin-right: 10px;
+}
+
+.user-link-list>li>a {
+	display: block;
+	width: 33px;
+	height: 33px;
+	transition: 0.5s;
+}
+
+.user-link-list>li>a:hover {
+	transform: rotate(45deg);
+}
+
+.schedule {
+	background: url("/res/img/user-link-icon.png") no-repeat;
+}
+
+.youtube {
+	background: url("/res/img/user-link-icon.png") no-repeat;
+	background-position-x: -33px;
+}
+
+.facebook {
+	background: url("/res/img/user-link-icon.png") no-repeat;
+	background-position-x: -66px;
+}
+
+.twitter {
+	background: url("/res/img/user-link-icon.png") no-repeat;
+	background-position-x: -99px;
+}
+
+.opencritic {
+	background: url("/res/img/user-link-icon.png") no-repeat;
+	background-position-x: -166px;
+}
+
+.search {
+	background: url("/res/img/user-link-icon.png") no-repeat;
+	background-position-x: -132px;
+}
+/* // 상단 영역 */
